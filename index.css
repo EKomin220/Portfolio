@@ -61,8 +61,9 @@ html {
     position: fixed;
     top: 0;
     width: 100%;
-    padding-right:1%;
+    padding-right:20%;
     padding-left:1%;
+    margin:auto;
 }
 
 .navbar a {
@@ -87,9 +88,19 @@ html {
     border-bottom: 3px solid rgb(239, 182, 95);
 }
 
+.navbar #menu-links {
+  display: none;
+}
+
 .main {
     margin-top: 60px;
     background:linear-gradient(to left, #2C5364, #203A43, #0F2027);
+    margin:auto;
+}
+
+.intro {
+  margin-top: 60px;
+  margin-bottom: auto;
 }
 
 .details{
@@ -102,7 +113,7 @@ html {
   float: left;
   width: 70% 30%;
   margin-left: 100px;
-
+  
 }
 
 .intro-row:after {
@@ -121,12 +132,6 @@ html {
     content: "";
     display: table;
     clear: both;
-  }
-  
-  @media screen and (max-width: 900px) {
-    .intro-column, .details-column {
-      width: 100%;
-    }
   }
 
   #profile-pic {
@@ -161,6 +166,7 @@ p {
     font-weight:400;
     color: pink;
     padding:20px 0px 0px 0px;
+    word-wrap: break-word;
 }
 
 p a {
@@ -172,60 +178,23 @@ p a:hover {
     color: rgb(246, 113, 135);
 }
 
-
-/*
-
-.intro {
-    background:#2C5364;
-    padding-bottom: 100px;
-    padding-left: 50px;
-    height: 600px;
-}
-.intro-right {
-    float:right;
-    width:50%;
-    height: 100%;
-    padding:30px;
-}
-.intro-left {
-    float:left;
-    width:50%;
-    height: 100%;
+.footer {
+  background-color: pink;
+  height: 50px;
+  width:auto;
+  padding-top: 10px;  
 }
 
-.details {
-     background: linear-gradient(to left, #2C5364, #203A43, #0F2027);
-     height: 600px;
-}
 
- #profile-pic {
-    min-width: 40%; 
-    max-width: 100%; 
-    height: auto; 
-    border-radius: 50%; 
-    float:left; 
-    padding: 100px;
-    opacity:1.0;
-}
-
-#profile-pic:hover {
-    opacity: 0.7;
+@media screen and (max-width: 900px) {
+  .intro-column, .details-column {
+    width: 100%;
   }
-
-  @media screen and (max-width:700px) {
-    .intro-right, .intro-left{
-        width:100%;
-        padding:0px
-    }
-    #profile-pic {
-        display:none;
-    }
-    h1, h2 {
-        padding-left: 30px;
-    }
-    p{
-        padding-left: 30px;
-
-    }
+  #profile-pic {
+    max-height: 200px;
+    float:left;
+    margin: 30px;
+  }
 }
-    */
+
+
