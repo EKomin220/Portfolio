@@ -11,9 +11,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" >
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
 </head>
-<!---->
+<!------------------------------------------------------->
 <body>
-
     <nav class="navbar">
         <div id="menu-links">
           <a href="contact.html">contact</a>
@@ -21,17 +20,16 @@
           <a href="about.html">about</a>
         </div>
         <a href="javascript:void(0)" class="icon" onclick="openMenu()">
-            <i class="fa fa-bars"></i>
+            <span class="material-symbols-outlined">menu</span>
         </a>
         <a href="index.html" class="split">home</a>
     </nav>
-
-    <div class="main">
-        <section class="intro" id="intro">
-        <div class="intro-row">
-        <div class="intro-column" id="intro-text">
-            <h1>Hi, my name is Eva</h1>
-            <p>I am a software developer based in Leeds <br>
+  <!------------------------->
+<main class="main">
+<div class="grid-container">
+  <div class="intro-text"> 
+    <h1>Hi, my name is Eva</h1>
+            <p>I am a junior software developer based in Leeds <br>
             <br>
              with a passion for creating beautiful websites,<br>
              <br>
@@ -39,58 +37,55 @@
              <br>
              and focus on user experience.</p>
             <br>
-            <p><a href="#details">Check out my latest projects </a></p>
+            <p><a href="#project-cards">Check out my latest projects </a></p>
             <br>
-            <p>or <a href="#contact">get in touch</a> if you have any questions. </p>
-        </div>
-        <div class="intro-column">
-            <img src="https://i.ibb.co/TqDdrtNr/image1.jpg" alt="profile picture woman with glasses image with paint effect" id="profile-pic">
-        </div>
-        </div>
-       </section>
-       
-       
-       
-       <section class="details" id="details">
-        <div class="details-row">
-            <div class="details-column">
-              <h2>Project1</h2>
-              <img src="https://i.ibb.co/4RWHkKtm/Screenshot-2025-05-02-at-17-59-25.png" alt="Screenshot-1">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-              <a href="#">Github Pages || </a>
-              <a href="#">Github Repository</a>
-            </div>
-            
-            <div class="details-column">
-              <h2>Project1</h2>
-              <img src="https://i.ibb.co/sdKSPhPm/Screenshot-2025-05-02-at-17-57-10.png" alt="Screenshot-2">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-              <a href="#">Github Pages || </a>
-              <a href="#">Github Repository</a>
-            </div>
-            
-            <div class="details-column">
-              <h2>Project1</h2>
-              <img src="https://i.ibb.co/4ZkgtNkh/Screenshot-2025-05-02-at-17-54-54.png" alt="Screenshot-3">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-              <a href="#">Github Pages  || </a>
-              <a href="#">Github Repository</a>
-            </div>
-        </div>           
-       </section>
-     
+            <p>or <a href="#contact.html">get in touch</a> if you have any questions. </p>
+  </div>
+  <div class="profile-pic"> 
+    <img src="https://i.ibb.co/TqDdrtNr/image1.jpg" alt="profile picture woman with glasses image with paint effect" id="profile-pic">
+  </div>
+  
+  <section class="project-cards" id="project-cards">
+    <div class="cards-headline"><h2>Examples of my work</h2></div>
+  <div class="card1">
+    <img src="https://i.ibb.co/sdKSPhPm/Screenshot-2025-05-02-at-17-57-10.png" alt="Screenshot of project 1 landing page" class="card-image">
+    <div class="card-content">
+      <h3>A Quiz App</h3>
+      <p>Multiple choice quiz app made using HTML, Tailwind CSS and JavaScript. </p>
+      <br>
+      <a href="#" target="blank">View Project details</a>
     </div>
-    <footer class="footer">
-        
-        <i class="fa-brands fa-github"><a href="https://github.com/EKomin220"></a></i>
-        <i class="fa-brands fa-linkedin"><a href="www.linkedin.com/in/eva-kominkova-18872958"></a></i>
-        <i class="fa-solid fa-envelope"><a href="contact.html"></a></i>
+  </div>
+  <div class="card2">
+    <img src="https://i.ibb.co/4RWHkKtm/Screenshot-2025-05-02-at-17-59-25.png" alt="Screenshot of project 2 landing page" class="card-image">
+    <div class="card-content">
+      <h3>Caesar Cipher</h3>
+      <p>A simple web app made using HTML, CSS and JavaScript with encryption of text in real time.</p>
+      <br>
+      <a href="#" target="blank">View Project</a>
+    </div>
+  </div>
+  <div class="card3">
+    <img src="https://i.ibb.co/4ZkgtNkh/Screenshot-2025-05-02-at-17-54-54.png" alt="Screenshot of project 3 landing page" class="card-image">
+    <div class="card-content">
+      <h3>A Hobby Website</h3>
+      <p>A website built using HTML and CSS with pages on my favourite hiking trails. </p>
+      <br>
+      <a href="#" target="blank">View Project</a>
+    </div>
+  </div>
+  <!-- Add more cards here if required -->
+</section>
+</main>
+  <footer class="footer"> 
+    <a href="https://github.com/EKomin220" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/eva-kominkova-18872958/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="contact.html" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+  </footer>
 
-    
-    </footer>
-
-
-<!---->
- <script src="index.js"></script> 
+</div>
+<!----------------------------------------------------------------------->
+<script src="index.js"></script> 
 </body>
 </html>
+
